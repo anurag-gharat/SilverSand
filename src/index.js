@@ -8,9 +8,13 @@ import * as serviceWorker from './serviceWorker';
 // import Popper from 'popper.js';
 // import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { BrowserRouter as Router } from "react-router-dom"
+import {RoomProvider} from './context'
 
 ReactDOM.render(
-<Router><App /></Router>
+    <RoomProvider>
+        <Router><App /></Router>
+    </RoomProvider>
+
 , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
