@@ -16,7 +16,6 @@ export default function Home() {
             </Hero>
             <Services />
             <FeaturedRooms />
-            <StyledHero></StyledHero>
         </div>
     )
 }
