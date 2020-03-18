@@ -3,7 +3,7 @@ import Room from './Room'
 export default function RoomsList({rooms}) {
     if(rooms.length===0){
         return(
-            <div>
+            <div className="empty-search">
                <h3> Layki nahi tuzi bhadyaaaaa! Nikal Lavde!</h3>
             </div>
         )
