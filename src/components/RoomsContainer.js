@@ -11,7 +11,7 @@ export default function RoomsContainer() {
         <RoomConsumer>
             {
                 value=>{
-                    console.log(value);
+                    
                     
                 const {loading,sortedRooms,rooms}=value;
                 if(loading){
