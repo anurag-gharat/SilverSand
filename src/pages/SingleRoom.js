@@ -4,7 +4,7 @@ import defaultBCG from '../images/room-1.jpeg'
 import Banner from '../components/Banner'
 import {Link} from 'react-router-dom'
 import {RoomContext} from '../context'
-
+import StyledHero from '../components/StyledHero'
 
 export default class SingleRoom extends Component {
 
@@ -31,11 +31,11 @@ export default class SingleRoom extends Component {
         const {name,description,capacity,size,price,extras,breakfast,pets,images}=room;
         return (
             <div>
-                    <Hero hero="roomsHero">
+                    <StyledHero img={images[0]}>
                         <Banner title={`${name} room`}>
                             <Link to="/rooms" className="btn-primary">Back to Rooms</Link>
                         </Banner>
-                    </Hero>
+                    </StyledHero>
             </div>
         )
     }
