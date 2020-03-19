@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <div>
             <Hero hero="defaultHero">
-                <Banner title="luxurious Rooms" subtitle="Deluxe rooms at good price" >
+                <Banner title="Silver Sand" subtitle="Your perfect gateway for weekend!" >
                     <Link to="/rooms" className="btn-primary">Rooms</Link>
                 </Banner>
             </Hero>
